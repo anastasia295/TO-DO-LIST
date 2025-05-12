@@ -1,0 +1,90 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ffffff;
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: rgba(22, 33, 54, 0.05) 0px 1px 8px 0px;
+    transition: transform 0.3s ease-in-out;
+    width: calc(100% / 3 - 15px);
+}
+.card-enter {
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.card-enter-active {
+    opacity: 1;
+}
+
+.card-exit {
+    opacity: 1;
+}
+
+.card-exit-active {
+    opacity: 0;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dueDate {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.priority {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tags {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.actionButton {
+    background: transparent;
+    border: unset;
+}
+
+.lastRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.missedDeadline {
+    color: #ff5353;
+}
+
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}

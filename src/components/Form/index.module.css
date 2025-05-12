@@ -1,0 +1,24 @@
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: white;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.button {
+    width: 100%;
+}
+
+.select:focus {
+    border-color: rgb(0, 123, 255);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

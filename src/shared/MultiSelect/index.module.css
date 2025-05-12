@@ -1,0 +1,47 @@
+.multiselect {
+    color: #ffffff;
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(214, 217, 224);
+    outline: none;
+    height: 56px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.dropdown {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 120px;
+}
+
+.option {
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.option:hover {
+    cursor: pointer;
+    background: rgb(211, 215, 220);
+}
+
+.multiselect__option.selected {
+    background-color: #252525;
+    color: white;
+}
+
+.input:focus {
+    border-color: rgb(0, 123, 255);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
